@@ -1,0 +1,40 @@
+@import "fonts";
+/////* VARIABLES */////
+//colors
+$primary-color: #C4A37B;
+$dark-color: #292929;
+$light-color: #fff;
+$menu-color: #2E2E2E;
+$h-color: #3A3A3A;
+$light-text-color: #ABABAB;
+$text-color: #5A5A5A;
+$hero-dark-color: #242123;
+$button-color: #000;
+//@media
+$xs: 480px;
+$s: 768px;
+$m: 990px;
+$l: 1200px;
+$xl: 1400px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/////* HEADER */////
+@import "header";
+/////* HERO */////
+@import "hero";
+/////* USP */////
+@import "usp";
+/////* BLOG */////
+@import "blog";
+/////* FOOTER */////
+@import "footer";

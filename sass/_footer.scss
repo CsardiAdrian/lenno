@@ -1,0 +1,58 @@
+footer {
+    position: relative;
+    .container-lg {
+        h3 {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            color: $h-color;
+            margin-bottom: 1.5rem;
+        }
+        nav {
+            margin: 0 0 1.5rem;
+            .nav-link {
+                font-size: 14px;
+                line-height: 30px;
+                color: $light-text-color;
+                font-weight: 400;
+                padding: 0;
+            }
+        }
+        form {
+            .form-control {
+                border-radius: 0;
+                padding: 0;
+            }
+            .form-floating {
+                label {
+                    color: #989A9C;
+                }
+            }
+            button {
+                border-radius: 0;
+                display: block;
+                width: 100%;
+                background: $button-color;
+            }
+        }
+    }
+    @media screen and (max-width:$m) {
+        text-align: center;
+    }
+    hr {
+        box-shadow: 0 2px 4px #000000;
+        margin: 2rem 0 3rem;
+    }
+    #back2Top {
+        position: absolute;
+        left: 50%;
+        bottom: -8%;
+        display: block;
+        width: 30px;
+        height: 15px;
+        cursor: pointer;
+        @media screen and (max-width: $m) {
+            bottom: -3%;
+        }
+    }
+}

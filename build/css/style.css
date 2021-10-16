@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 22px; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+  header .container-lg {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 15px 40px; }
+    header .container-lg .logo-con {
+      padding: .5rem 0;
+      display: block; }
+      @media screen and (max-width: 990px) {
+        header .container-lg .logo-con .logo img {
+          width: 87px;
+          height: 26px; } }
+    header .container-lg nav .nav-link {
+      color: #2E2E2E;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important; }
+      header .container-lg nav .nav-link:hover {
+        background: #C4A37B;
+        color: #fff; }
+  header #mobilNavOpen {
+    font-size: 40px;
+    font-weight: 100;
+    padding: 0.5rem 0;
+    height: 40px;
+    color: #3A3A3A; }
+  header #mobilNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    -webkit-box-shadow: 2px 11px 20px #171717;
+    box-shadow: 2px 11px 20px #171717; }
+    header #mobilNav ul {
+      margin: 0 auto; }
+      header #mobilNav ul li {
+        margin: 10px 0;
+        display: block; }
+        header #mobilNav ul li a {
+          padding: 8px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff !important;
+          display: block;
+          transition: 0.3s; }
+          header #mobilNav ul li a:hover {
+            background: #C4A37B; }
+
+#hero {
+  width: 100%;
+  max-height: 42rem;
+  max-width: 100%;
+  min-height: 42rem;
+  height: 42rem;
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-width: 100%;
+  background-image: url("../../Assets/images/background_pattern.png"); }
+  @media screen and (max-width: 768px) {
+    #hero {
+      min-height: 23rem;
+      height: 23rem;
+      max-height: 23rem; } }
+  #hero .container-lg {
+    position: relative; }
+    #hero .container-lg .hero-body {
+      padding: 13rem 3rem 10rem 0;
+      width: 38%;
+      position: absolute; }
+      #hero .container-lg .hero-body .hero-title {
+        color: #292929;
+        font-size: 50px;
+        line-height: 62px;
+        font-weight: 700;
+        margin-bottom: 30px; }
+        #hero .container-lg .hero-body .hero-title span {
+          color: #C4A37B; }
+        @media screen and (max-width: 990px) {
+          #hero .container-lg .hero-body .hero-title {
+            font-size: 28px;
+            line-height: 38px; } }
+      #hero .container-lg .hero-body .hero-description {
+        font-size: 16px;
+        line-height: 28px;
+        color: #5A5A5A;
+        margin-bottom: 30px; }
+      #hero .container-lg .hero-body .hero-button {
+        border-radius: 0;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0.5rem 4rem;
+        background: #000; }
+        @media screen and (max-width: 768px) {
+          #hero .container-lg .hero-body .hero-button {
+            padding: 1rem 2rem; } }
+      @media screen and (max-width: 1400px) {
+        #hero .container-lg .hero-body {
+          padding: 8rem 1rem 0rem 0rem;
+          width: 38%; } }
+      @media screen and (max-width: 1200px) {
+        #hero .container-lg .hero-body {
+          padding: 8rem 1rem 0rem 0rem;
+          width: 38%; } }
+      @media screen and (max-width: 768px) {
+        #hero .container-lg .hero-body {
+          padding: 8rem 1rem 0rem 1rem;
+          width: 75%; } }
+    #hero .container-lg .hero-watch {
+      background-image: url("../../Assets/images/hero_watch.png");
+      background-repeat: no-repeat;
+      width: 459px;
+      height: 567px;
+      position: absolute;
+      right: 24%;
+      top: 5rem;
+      z-index: 80; }
+      @media screen and (max-width: 1200px) {
+        #hero .container-lg .hero-watch {
+          right: 15%; } }
+      @media screen and (max-width: 990px) {
+        #hero .container-lg .hero-watch {
+          right: 12%; } }
+      @media screen and (max-width: 768px) {
+        #hero .container-lg .hero-watch {
+          width: 152px;
+          height: 281px;
+          right: 0;
+          top: 5rem;
+          background-size: 100%;
+          background-position: right;
+          background-image: url("../../Assets/images/hero_watch_m.png"); } }
+  #hero .hero-dark {
+    background: #242123;
+    width: 45%;
+    max-height: 42rem;
+    min-height: 42rem;
+    height: 42rem;
+    right: 0;
+    position: absolute;
+    overflow: hidden; }
+    #hero .hero-dark .hero-watch-whiteBg {
+      background: #ffffff26;
+      width: 200px;
+      height: 75%;
+      position: absolute;
+      top: 7.5rem;
+      left: 0;
+      z-index: 20; }
+    #hero .hero-dark span {
+      position: absolute;
+      font-size: 220px;
+      line-height: 180px;
+      color: #3A3A3A;
+      top: 11rem;
+      font-weight: 900; }
+    @media screen and (max-width: 768px) {
+      #hero .hero-dark {
+        width: 20%;
+        max-height: 23rem;
+        min-height: 23rem;
+        height: 23rem; } }
+
+.usp {
+  background-color: #292929;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px 30px;
+  letter-spacing: 0; }
+  @media screen and (max-width: 990px) {
+    .usp {
+      padding: 0; } }
+  .usp .usp-con {
+    border-left: 1px solid #C4A37B;
+    fill: #d8d8d8; }
+    .usp .usp-con:first-child {
+      border: none; }
+      @media screen and (max-width: 990px) {
+        .usp .usp-con:first-child {
+          border-bottom: 1px solid #C4A37B; } }
+    @media screen and (max-width: 990px) {
+      .usp .usp-con:nth-child(3) {
+        border-left: 0; } }
+    .usp .usp-con .usp-icon {
+      display: block;
+      height: 60px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      -o-object-position: 50% 50%;
+      object-position: 50% 50%;
+      width: 100%;
+      margin-bottom: 1.5rem; }
+    .usp .usp-con .usp-text {
+      vertical-align: bottom; }
+    .usp .usp-con .semi {
+      font-weight: 400; }
+    @media screen and (max-width: 990px) {
+      .usp .usp-con {
+        padding: 30px;
+        border-bottom: 1px solid #C4A37B; } }
+
+#cardCon {
+  margin: 3rem 0 1.5rem; }
+  #cardCon .card {
+    max-width: 410px;
+    max-height: 405px;
+    border-style: inset;
+    border-radius: 0;
+    margin: 0 auto 1.5rem; }
+    #cardCon .card a {
+      text-decoration: none; }
+    #cardCon .card .card-image {
+      margin: 0; }
+      #cardCon .card .card-image img {
+        width: 100%;
+        max-width: 410px;
+        max-height: 405px; }
+    #cardCon .card .card-content {
+      padding: 15px; }
+      #cardCon .card .card-content .card-title {
+        color: #5A5A5A;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        font-size: 14px;
+        line-height: 24px; }
+      #cardCon .card .card-content .card-readmore {
+        color: #C4A37B;
+        font-size: 14px;
+        line-height: 18px; }
+        #cardCon .card .card-content .card-readmore .card-icon {
+          margin-left: 0.5rem; }
+
+footer {
+  position: relative; }
+  footer .container-lg h3 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-bottom: 1.5rem; }
+  footer .container-lg nav {
+    margin: 0 0 1.5rem; }
+    footer .container-lg nav .nav-link {
+      font-size: 14px;
+      line-height: 30px;
+      color: #ABABAB;
+      font-weight: 400;
+      padding: 0; }
+  footer .container-lg form .form-control {
+    border-radius: 0;
+    padding: 0; }
+  footer .container-lg form .form-floating label {
+    color: #989A9C; }
+  footer .container-lg form button {
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    background: #000; }
+  @media screen and (max-width: 990px) {
+    footer {
+      text-align: center; } }
+  footer hr {
+    box-shadow: 0 2px 4px #000000;
+    margin: 2rem 0 3rem; }
+  footer #back2Top {
+    position: absolute;
+    left: 50%;
+    bottom: -8%;
+    display: block;
+    width: 30px;
+    height: 15px;
+    cursor: pointer; }
+    @media screen and (max-width: 990px) {
+      footer #back2Top {
+        bottom: -3%; } }
+
+/*# sourceMappingURL=style.css.map */
