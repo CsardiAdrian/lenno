@@ -1,53 +1,39 @@
+<!-- FOOTER -->
+<footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 1') ) : ?> <?php endif; ?>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 2') ) : ?> <?php endif; ?>
+                        </div>
+                        <div class="col-12 col-lg-2">
+                        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 3') ) : ?> <?php endif; ?>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 4') ) : ?> <?php endif; ?>
 
-<!-- Footer -->
-<footer class="text-center text-lg-start text-muted">
-  <!-- Section: Links  -->
-  <section>
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-		  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 1') ) : ?> <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Content -->
-		  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 2') ) : ?> <?php endif; ?>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Content -->
-          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 3') ) : ?> <?php endif; ?>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Content -->
-		  <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 4') ) : ?> <?php endif; ?>
-        </div>
-        <!-- Grid column -->
+      <!-- Copyright -->
+      <div class="copyright-container text-center p-3">
+          <?php echo add_custom_field() ?>
+              <a  class="copyright" href="https://<?php echo add_custom_link_field(); ?>" target="_blank"><?php echo add_custom_link_field(); ?></a>
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="copyright-container text-center p-4">
-    <?php echo add_custom_field() ?>
-		<a  class="copyright" href="https://<?php echo add_custom_link_field(); ?>" target="_blank"><?php echo add_custom_link_field(); ?></a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-
-<?php wp_footer(); ?>
+      <!-- Copyright -->
+    </footer>
+    <?php wp_footer(); ?>
+    <!-- jQuery forrásfájl Google CDN-ről -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js">
+    </script>
+    <script src="<?php echo home_url('wp-content/themes/lenno/build/js/main.min.js'); ?>"></script>
 </body>
+
 </html>

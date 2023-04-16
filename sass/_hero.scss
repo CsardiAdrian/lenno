@@ -1,126 +1,109 @@
-$hero-height: 42rem;
-$hero-height-m: 23rem;
 #hero {
     width: 100%;
-    max-height: $hero-height;
     max-width: 100%;
-    min-height: $hero-height;
-    height: $hero-height;
-    margin-top: 0!important;
-    padding-bottom: 0!important;
     min-width: 100%;
-    background-image: url('../../Assets/images/background_pattern.png');
-    @media screen and (max-width: $s) {
-        min-height: $hero-height-m;
-        height: $hero-height-m;
-        max-height: $hero-height-m;
-    }
+    margin-top: 0 !important;
+    margin-bottom: -30px;
+    padding-top: 65px;
+    padding-bottom: 0 !important;
     .container-lg {
         position: relative;
         .hero-body {
-            padding: 13rem 3rem 10rem 0;
-            width: 38%;
             position: absolute;
+            width: 38%;
+            padding: 13rem 3rem 10rem 0;
             .hero-title {
+                margin-bottom: 30px;
                 color: $dark-color;
                 font-size: 50px;
-                line-height: 62px;
                 font-weight: 700;
-                margin-bottom: 30px;
+                line-height: 62px;
                 span {
                     color: $primary-color;
                 }
-                @media screen and (max-width:$m) {
+                @media screen and (max-width: $m) {
                     font-size: 28px;
                     line-height: 38px;
                 }
             }
             .hero-description {
+                margin-bottom: 30px;
+                color: $text-color;
                 font-size: 16px;
                 line-height: 28px;
-                color: $text-color;
-                margin-bottom: 30px;
             }
             .hero-button {
+                padding: 0.5rem 4rem;
                 border-radius: 0;
+                background: $black;
                 font-size: 18px;
                 line-height: 28px;
-                padding: 0.5rem 4rem;
-                background: $button-color;
                 @media screen and (max-width: $s) {
                     padding: 1rem 2rem;
                 }
             }
-            @media screen and (max-width:$xl) {
-                padding: 8rem 1rem 0rem 0rem;
+            @media screen and (max-width: $xl) {
                 width: 38%;
-            }
-            @media screen and (max-width:$l) {
                 padding: 8rem 1rem 0rem 0rem;
-                width: 38%;
             }
-            @media screen and (max-width:$s) {
-                padding: 8rem 1rem 0rem 1rem;
+            @media screen and (max-width: $l) {
+                width: 38%;
+                padding: 8rem 1rem 0rem 0rem;
+            }
+            @media screen and (max-width: $s) {
                 width: 75%;
+                padding: 8rem 1rem 0rem 1rem;
             }
         }
         .hero-watch {
-            background-image: url('../../Assets/images/hero_watch.png');
-            background-repeat: no-repeat;
+            position: absolute;
+            top: 5rem;
+            right: 24%;
             width: 459px;
             height: 567px;
-            position: absolute;
-            right: 24%;
-            top: 5rem;
+            background-repeat: no-repeat;
             z-index: 80;
             @media screen and (max-width: $l) {
                 right: 15%;
             }
-            @media screen and (max-width:$m) {
+            @media screen and (max-width: $m) {
                 right: 12%;
             }
-            @media screen and (max-width:$s) {
+            @media screen and (max-width: $s) {
+                top: 5rem;
+                right: 0;
                 width: 152px;
                 height: 281px;
-                right: 0;
-                top: 5rem;
-                background-size: 100%;
                 background-position: right;
-                background-image: url('../../Assets/images/hero_watch_m.png');
+                background-size: 100%;
             }
         }
     }
     .hero-dark {
-        background: $hero-dark-color;
-        width: 45%;
-        max-height: $hero-height;
-        min-height: $hero-height;
-        height: $hero-height;
-        right: 0;
         position: absolute;
+        right: 0;
+        width: 45%;
+        background: $hero-dark-color;
         overflow: hidden;
         .hero-watch-whiteBg {
-            background: #ffffff26;
-            width: 200px;
-            height: 75%;
             position: absolute;
             top: 7.5rem;
             left: 0;
+            width: 200px;
+            height: 75%;
+            background: #ffffff26;
             z-index: 20;
         }
         span {
             position: absolute;
-            font-size: 220px;
-            line-height: 180px;
-            color: $h-color;
             top: 11rem;
+            color: $h-color;
+            font-size: 220px;
             font-weight: 900;
+            line-height: 180px;
         }
-        @media screen and (max-width:$s) {
+        @media screen and (max-width: $s) {
             width: 20%;
-            max-height: $hero-height-m;
-            min-height: $hero-height-m;
-            height: $hero-height-m;
         }
     }
 }

@@ -16,11 +16,16 @@ module.exports = function(grunt) {
                 src: ['js/*.js'],
                 dest: 'build/js/main.js',
             },
+            enJS: {
+                src: ['js/*.js'],
+                dest: '../../../en/wp-content/themes/lenno/build/js/main.js',
+            }
         },
         uglify: {
             my_target: {
                 files: {
-                    'build/js/main.min.js': ['build/js/main.js']
+                    'build/js/main.min.js': ['build/js/main.js'],
+                    '../../../en/wp-content/themes/lenno/build/js/main.min.js': ['../../../en/wp-content/themes/lenno/build/js/main.js']
                 }
             }
         },
@@ -38,11 +43,15 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: ['js/**/*.js'],
-                tasks: ['concat:js'],
+                tasks: ['concat:js', 'uglify:my_target'],
+            },
+            enJS: {
+                files: ['js/**/*.js'],
+                tasks: ['concat:enJS', 'uglify:my_target'],
             },
             sass: {
                 files: ['sass/**/*.scss'],
-                tasks: ['sass:dist'],
+                tasks: ['sass:dist', 'cssmin:target', 'uglify:my_target'],
             },
         },
     });

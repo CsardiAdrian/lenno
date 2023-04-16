@@ -1,39 +1,183 @@
-#cardCon {
-    margin: 3rem 0 1.5rem;
+/////////// CATEGORY /////////
+.card-container {
+    margin: 3rem 0 0;
     .card {
         max-width: 410px;
         max-height: 405px;
-        border-style: inset;
+        margin: 0;
+        margin-bottom: 1.5rem;
+        transition: All 0.5s;
+        transition-delay: 1s;
+        border: none;
         border-radius: 0;
-        margin: 0 auto 1.5rem;
+        &:hover {
+            .card-content {
+                .card-readmore {
+                    transition: All 0.5s;
+                    transform: scale(1.05);
+                    background: $primary-color;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .header {
+            position: relative;
+            .category-label {
+                bottom: 30px;
+            }
+        }
         a {
             text-decoration: none;
         }
         .card-image {
-            margin: 0;
+            width: 100%;
+            max-width: 410px;
+            max-height: 250px;
+            min-height: 250px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            overflow: hidden;
             img {
+                transition: transform 0.5s ease;
+                transition: transform 0.5s, filter 1.5s ease-in-out;
                 width: 100%;
-                max-width: 410px;
-                max-height: 405px;
+                height: 100%;
+            }
+            &:hover img {
+                transform: scale(1.1);
             }
         }
         .card-content {
-            padding: 15px;
             .card-title {
-                color: $text-color;
-                font-weight: 700;
-                margin-bottom: 2rem;
-                font-size: 14px;
-                line-height: 24px;
+                text-align: center;
+                a {
+                    position: absolute;
+                    top: 10px;
+                    left: 20px;
+                    padding: 5px;
+                    max-width: 60%;
+                    border-radius: 4px;
+                    background: #33cc9c;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-align: left;
+                    line-height: 24px;
+                }
             }
             .card-readmore {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                align-content: center;
+                width: 100%;
+                border: 2px solid;
+                background: transparent;
                 color: $primary-color;
-                font-size: 14px;
-                line-height: 18px;
+                font-size: 18px;
+                line-height: 20px;
+                transition: All 0.5s;
+                transform: scale(1);
+                a {
+                    padding: 10px;
+                }
                 .card-icon {
                     margin-left: 0.5rem;
                 }
             }
         }
     }
+    .category-label {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        padding: 5px;
+        border-radius: 4px;
+        background: $secondary-color;
+        .post-categories {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
 }
+
+/////////// CATEGORY /////////
+/////////// SINGLE POST /////////
+.single-post-container {
+    .row {
+        padding: 0;
+        .col-12 {
+            padding: 0;
+        }
+    }
+    .single-post {
+        .header {
+            position: relative;
+            margin-bottom: 20px;
+            z-index: 2;
+            .page-title {
+                margin: 0 0 15px;
+                color: $text-color;
+                font-weight: 900;
+                text-align: center;
+            }
+        }
+        .content {
+            padding: 0 15px;
+            .thumbnail {
+                float: right;
+                padding-left: 20px;
+                padding-bottom: 20px;
+                img {
+                    width: 100%;
+                    max-width: 500px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/////////// SINGLE POST /////////
+/////////// MEDIA QUERY /////////
+@media screen and (max-width: $m) {
+    .card-container {
+        justify-content: center;
+    }
+    .single-post-container {
+        .single-post {
+            .content {
+                .thumbnail {
+                    padding-right: 0;
+                    img {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $l) {
+    .single-post-container {
+        .single-post {
+            .content {
+                .thumbnail {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////// MEDIA QUERY /////////
